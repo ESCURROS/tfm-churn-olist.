@@ -1,0 +1,51 @@
+{
+  "modelo_nombre": "Logistic Regression",
+  "features": [
+    "recencia_dias",
+    "frecuencia",
+    "valor_total",
+    "avg_review_score",
+    "num_categorias",
+    "avg_delivery_days"
+  ],
+  "cutoff_date": "2018-06-01",
+  "pred_window_days": 92,
+  "metricas_test": {
+    "Modelo": "Logistic Regression",
+    "AUC-ROC": 0.6038,
+    "F1-Score": 0.7197,
+    "Precision": 0.9959,
+    "Recall": 0.5635
+  },
+  "comparativa": [
+    {
+      "Modelo": "Logistic Regression",
+      "AUC-ROC": 0.6038,
+      "F1-Score": 0.7197,
+      "Precision": 0.9959,
+      "Recall": 0.5635
+    },
+    {
+      "Modelo": "Random Forest",
+      "AUC-ROC": 0.5051,
+      "F1-Score": 0.9613,
+      "Precision": 0.9945,
+      "Recall": 0.9302
+    },
+    {
+      "Modelo": "XGBoost",
+      "AUC-ROC": 0.4904,
+      "F1-Score": 0.9948,
+      "Precision": 0.9946,
+      "Recall": 0.9951
+    },
+    {
+      "Modelo": "LightGBM",
+      "AUC-ROC": 0.488,
+      "F1-Score": 0.9949,
+      "Precision": 0.9947,
+      "Recall": 0.9952
+    }
+  ],
+  "nota_metodologica": "Features calculadas sobre período sep2016-jun2018. Label: si el cliente compró o no entre jun2018 y sep2018. Sin data leakage."
+}
